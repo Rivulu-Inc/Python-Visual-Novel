@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 56: expected statement.
-    Allies+=1
+File "game/script.rpy", line 19: keyword argument u'xalign' appears more than once in a frame statement.
+    xalign 0.5 ypos 50
           ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Mar 24 11:23:49 2020
+Wed Mar 25 09:27:11 2020

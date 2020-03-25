@@ -1,26 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 42, in script
-    $ ui.timer(5.0, ui,jumps('slow'))
-  File "game/script.rpy", line 42, in <module>
-    $ ui.timer(5.0, ui,jumps('slow'))
-NameError: name 'jumps' is not defined
+  File "game/script.rpy", line 60, in script
+    menu:
+TypeError: 'NoneType' object has no attribute '__getitem__'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 42, in script
-    $ ui.timer(5.0, ui,jumps('slow'))
-  File "D:\RenPy\RenPy\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\RenPy\RenPy\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/script.rpy", line 42, in <module>
-    $ ui.timer(5.0, ui,jumps('slow'))
-NameError: name 'jumps' is not defined
+  File "game/script.rpy", line 60, in script
+    menu:
+  File "D:\RenPy\RenPy\renpy-7.3.5-sdk\renpy\ast.py", line 1631, in execute
+    next_node(self.items[choice][2][0])
+TypeError: 'NoneType' object has no attribute '__getitem__'
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 MyGame 1.0
-Tue Mar 24 11:54:13 2020
+Wed Mar 25 09:05:15 2020
