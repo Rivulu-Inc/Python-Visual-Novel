@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 19: keyword argument u'xalign' appears more than once in a frame statement.
-    xalign 0.5 ypos 50
-          ^
+File "game/EarnMoneyMana.rpy", line 5: EOL while scanning string literal
+(Perhaps you left out a ' at the end of the first line.)
+    renpy.say(None,'Welcome To Hang-Man
+                                       ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Wed Mar 25 09:27:11 2020
+Thu Mar 26 17:37:01 2020

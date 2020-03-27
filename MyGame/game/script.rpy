@@ -1,37 +1,19 @@
-label act:
-    show screen Stats
 define r = Character('Sir Raymond')
 define f = Character('Fae Clan Representative')
 define e = Character('Elven Clan Representative')
 define d = Character('Dwarven Clan Representative')
 
-screen Progress():
-     frame:
-         xalign 0.5 ypos 50
-         button:
-             action Show('Stats')
-             text _("View Stats") style "button_text"
-screen Stats():
-    frame:
-        xalign 0.5 ypos 50
-        text "Water Magic=[WM]":
-         size 30
-        button:
-            action Hide('Stats')
-            text _("Exit") style "button_text"
-define WM = 5 # Water Magic
-define FM = 5 # Fire Magic
-define AM = 5 # Air Magic
-define EM = 5 # Earth magic
-define ELM = 5 # Eletric magic
-define PM = 5 # Physic magic
-define MM = 5 # Metal Magic
-define DM = 5 # Dawn Magic
-define Faunia = '' # Faunia
+ # Water Magic
+ # Fire Magic
+ # Air Magic
+ # Earth magic
+ # Physic magic
+ # Metal Magic
+ # Dawn Magic
 define Money = 1000
 define Health = 100
 define Allies = 0
-
+define Mana = 100
 
 label start:
  scene bg Isle of peace
@@ -63,9 +45,9 @@ label start:
          All our armies are in your disposal'
          e 'We just want territories for our own in the mountains'
          d 'We second that!'
-         'Ally point:[Allies]'
      "Never Mind, i don't have money":
          e 'We will try stand with you, but some of our clans may not join you'
          d 'And we will be neutral in this fight'
          $Allies+=1
-         'Ally Point:[Allies]'
+ call Minigame
+ 'Nice Game, Right :D'
