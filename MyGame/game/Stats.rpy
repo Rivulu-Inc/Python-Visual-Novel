@@ -17,7 +17,7 @@ screen Stats():
         vbox:
             text "Money=[Money]":
                 size 30
-            text "Allies=[Allies]":
+            text "Army=[Army]":
                 size 30
             text "Health=[Health]":
                 size 30

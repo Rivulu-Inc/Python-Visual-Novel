@@ -12,7 +12,7 @@ define d = Character('Dwarven Clan Representative')
  # Dawn Magic
 define Money = 1000
 define Health = 100
-define Allies = 0
+define Army = 0
 define Mana = 100
 
 label start:
@@ -37,10 +37,9 @@ label start:
  r 'even the elven clans and dwarven clan stand with us'
  menu:
      'Bribe the elven and dwarven clans to stand with you to gain more allies!'
-     'You have [Money] Coins'
      'I will ask (500 coins)':
          $Money-=100
-         $Allies+=5
+         $Army+=5
          e 'We pledge to stand with you dear humans!
          All our armies are in your disposal'
          e 'We just want territories for our own in the mountains'
@@ -48,6 +47,6 @@ label start:
      "Never Mind, i don't have money":
          e 'We will try stand with you, but some of our clans may not join you'
          d 'And we will be neutral in this fight'
-         $Allies+=1
+         $Army+=1
  call Minigame
  'Nice Game, Right :D'

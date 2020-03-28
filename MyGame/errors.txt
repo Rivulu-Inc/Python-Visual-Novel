@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/EarnMoneyMana.rpy", line 5: EOL while scanning string literal
-(Perhaps you left out a ' at the end of the first line.)
-    renpy.say(None,'Welcome To Hang-Man
-                                       ^
-    
+File "game/screens.rpy", line 295: u'background' is not a keyword argument or valid child for the vbox statement.
+    background "green.png"
+              ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Mar 26 17:37:01 2020
+Fri Mar 27 16:19:45 2020
