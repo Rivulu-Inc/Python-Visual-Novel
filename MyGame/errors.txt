@@ -2,9 +2,23 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 295: u'background' is not a keyword argument or valid child for the vbox statement.
-    background "green.png"
-              ^
+File "game/script.rpy", line 87: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    f 'You Tratiors!'
+    ^
+
+File "game/script.rpy", line 90: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
+(Perhaps you left out a ' at the end of the first line.)
+    h 'We knew something like this would happen,That is why we fought to keep the fae away
+    ^
+    from the crystal'
+
+File "game/script.rpy", line 101: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    E 'But i have a last present to give you guys'
+    ^
+
+File "game/script.rpy", line 103: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    E 'Bye!! Seen you soon'
+    ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Mar 27 16:19:45 2020
+Tue Mar 31 15:09:37 2020

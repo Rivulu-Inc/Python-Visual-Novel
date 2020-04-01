@@ -27,3 +27,9 @@ This is the Word [L3]""")
         else:
             renpy.say(None,'You Lost')
     return
+label minigame2:
+    python:
+        import random
+        renpy.say(None,'Welcome to: Guess the Number!!:')
+        a=random.randint(0,10)
+        b=renpy.input("Enter Number")
