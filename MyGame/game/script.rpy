@@ -1,12 +1,7 @@
 define f = Character('Fae Leader')
 define E = Character('Evil Twin')
 define h = Character('Human Leader')
-define s = Character('Stanley')
-define b = Character('Bertha')
-define l = Character('Lily')
-define j = Character('Justin')
-define d = Character('Dad')
-define m = Character('Mom')
+define end = 0
  # Water Magic
  # Fire Magic
  # Air Magic
@@ -47,7 +42,7 @@ label start:
     'The Fae Leader starts chanting in a strange language and the army behind
     him starts taking up the chant when suddenly'
     hide f
-    show h
+    show h at right
     with dissolve
     h 'Wait! Stop!'
     hide h
